@@ -1,0 +1,60 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(87, 123, 189, 0.848);
+    color: white;
+}
+h1{
+   text-align: center; 
+   margin-bottom: 6%;
+   font-size: 40px;
+}
+p{
+    text-align:center;
+    font-size: 30px;
+}
+input{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 35%;
+    font-size: 20px;
+}
+.botao{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    top: 70%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+#res{
+    background-color: rgba(46, 39, 80, 0.539);
+    padding: 30px;
+    border-radius: 05%;
+    position:absolute;
+    top: 80%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+div{
+    text-align: center;
+    font-size: 30px;
+}
+.notas{
+    background-color: rgba(46, 39, 80, 0.539);
+    position:absolute;
+    top: 40%;
+    left:40%;
+    transform:translate(-50%,-50%);
+    padding: 50px;
+    border-radius: 05%;
+}
+.pesos{
+    background-color: rgba(46, 39, 80, 0.539);
+    position:absolute;
+    top: 40%;
+    left:59%;
+    transform:translate(-50%,-50%);
+    padding: 50px;
+    border-radius: 05%;
+}

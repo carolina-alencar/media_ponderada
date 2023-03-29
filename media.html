@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Somando números</title>
+</head>
+<body>
+    <h1>Média de notas</h1>
+        <div class="notas"> 
+            <p>Nota 1</p>
+            <input type="number" name="txtn1" id="nota1"> 
+            <p>Nota 2</p>
+            <input type="number" name="txtn2" id="nota2">
+            <p>Nota 3</p>
+            <input type="number" name="txtn2" id="nota3">
+        </div> 
+        <div class="pesos"> 
+            <p>Peso 1</p>
+            <input type="number" name="txtn1" id="peso1"> 
+            <p>Peso 2</p>
+            <input type="number" name="txtn2" id="peso2">
+            <p>Peso 3</p>
+            <input type="number" name="txtn2" id="peso3">
+        </div> 
+
+        <input type="button" value="Média" onclick="media()" class="botao"> 
+        <div id="res">Resultado</div> 
+
+   
+   
+   <script>
+    function media() {
+        //Notas:
+        var n1 = window.document.getElementById('nota1')
+        var n2 = window.document.getElementById('nota2') // or window.document.querySelector('input#txtn2')
+        var n3 = window.document.getElementById('nota3')
+        //Pesos:
+        var p1 = window.document.getElementById('peso1')
+        var p2 = window.document.getElementById('peso2') 
+        var p3 = window.document.getElementById('peso3')
+        //resultado
+        var res = window.document.getElementById('res')
+        //Convertendo as notas de str para number
+        var n01 = Number(n1.value)
+        var n02 = Number(n2.value)
+        var n03 = Number(n3.value)
+        //Convertendo os pesos de str para number
+        var p01 = Number(p1.value)
+        var p02 = Number(p2.value)
+        var p03 = Number(p3.value)
+        
+        var media = (n01*p01+n02*p02+n03*p03)/(p01+p02+p03)
+        res.innerHTML = media
+    }
+   </script>
+</body>
+</html>
